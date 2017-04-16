@@ -1,8 +1,74 @@
 @import url(https://fonts.googleapis.com/css?family=Sniglet:800|Nixie+One);
-header {
-  background: black; }
-
 body {
-  background: pink; }
+  padding: 10px;
+  background: #EEF0F2; }
+
+.bold {
+  font-weight: bolder; }
+
+.header {
+  font-family: "Sniglet";
+  font-size: 70px; }
+
+p {
+  font-family: "Nixie One"; }
+
+nav {
+  font-family: "Nixie One";
+  font-weight: 100;
+  font-size: 40px;
+  display: flex;
+  justify-content: space-between; }
+
+a {
+  color: #292F36;
+  text-decoration: none; }
+  a:hover {
+    color: #52D1DC; }
+
+.main {
+  height: 800px;
+  width: 96.5vw; }
+
+#main-page .name {
+  font-family: "Sniglet";
+  font-weight: 100;
+  font-size: 75px;
+  color: #292F36;
+  display: flex;
+  justify-content: center; }
+#main-page .separate {
+  border: 1px solid black;
+  margin-top: 8px; }
+#main-page .separate2 {
+  border: 1px solid black;
+  margin-top: 5px; }
+#main-page .skull {
+  width: 165px;
+  display: flex; }
+#main-page .first {
+  display: flex; }
+#main-page .last {
+  display: flex; }
+#main-page .title {
+  display: flex;
+  justify-content: center;
+  margin-top: 7%; }
+#main-page .annoyingdiv {
+  display: flex;
+  justify-content: center; }
+#main-page .bio-box {
+  display: flex;
+  width: 650px; }
+#main-page .social-media {
+  display: flex;
+  justify-content: center; }
+  #main-page .social-media .gmail, #main-page .social-media .linkedin, #main-page .social-media .dribbble, #main-page .social-media .behance {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px; }
+#main-page .contact {
+  display: flex;
+  justify-content: center; }
 
 /*# sourceMappingURL=main.css.map */

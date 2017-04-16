@@ -1,3 +1,41 @@
-header {
-  background: black;
+body {
+  padding: 10px;
+  background: $white;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.header {
+  font-family: "Sniglet";
+  font-size: 70px;
+}
+
+p {
+  font-family: "Nixie One";
+}
+
+nav {
+  font-family: "Nixie One";
+  font-weight: 100;
+  font-size: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  color: $grey;
+  text-decoration: none;
+  // border: 1px solid black;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+.main {
+  // border: 1px solid black;
+  height: 800px;;
+  width: 96.5vw;
 }
