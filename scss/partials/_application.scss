@@ -55,3 +55,24 @@ margin-top: 8px;
 border: 1px solid $grey;
 margin-top: 5px;
 }
+
+li {
+  list-style: none;
+}
+
+#overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+#overlay img {
+  margin-top: 10%;
+}
+
+#overlay p {
+  color: white;
+}

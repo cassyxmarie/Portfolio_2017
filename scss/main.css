@@ -44,6 +44,23 @@ a {
   border: 1px solid #292F36;
   margin-top: 5px; }
 
+li {
+  list-style: none; }
+
+#overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center; }
+
+#overlay img {
+  margin-top: 10%; }
+
+#overlay p {
+  color: white; }
+
 #main-page .name {
   font-family: "Sniglet";
   font-weight: 100;
@@ -80,7 +97,7 @@ a {
   justify-content: center; }
 
 #design-page .img-design {
-  max-width: 500px; }
+  max-width: 300px; }
 
 #illustration-page .img-illustration {
   max-height: 200px; }
