@@ -9,59 +9,52 @@
     justify-content: center;
   }
 
-  .separate {
-  border: 1px solid black;
-  margin-top: 8px;
-}
-.separate2 {
-  border: 1px solid black;
-  margin-top: 5px;
-}
-.skull {
-  width: 165px;
-  display: flex;
-}
 
-.first{
-  display: flex;
-}
-
-.last {
-  display: flex;
-}
-
-.title {
-  display: flex;
-  justify-content: center;
-  margin-top: 7%;
-}
-
-.annoyingdiv {
-  display: flex;
-  justify-content: center;
-}
-
-.bio-box {
-  display: flex;
-  width: 650px;
-  // border: 1px solid black;
-}
-
-.social-media {
-  display: flex;
-  justify-content: center;
-
-  .gmail, .linkedin, .github, .behance {
+  .skull {
+    width: 165px;
     display: flex;
-    margin-left: 10px;
-    margin-right: 10px;
-
   }
-}
 
-.contact {
-  display: flex;
-  justify-content: center;
-}
+  .first{
+    display: flex;
+  }
+
+  .last {
+    display: flex;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+  }
+
+  .annoyingdiv {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bio-box {
+    display: flex;
+    width: 650px;
+    // border: 1px solid $grey;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+
+    .gmail, .linkedin, .github, .behance {
+      display: flex;
+      margin-left: 10px;
+      margin-right: 10px;
+
+    }
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+  }
 
 }

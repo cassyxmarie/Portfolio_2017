@@ -12,7 +12,8 @@ body {
   text-align: center; }
 
 p {
-  font-family: "Nixie One"; }
+  font-family: "Nixie One";
+  color: #292F36; }
 
 nav {
   font-family: "Nixie One";
@@ -35,6 +36,14 @@ a {
   width: 300px;
   margin: 50px; }
 
+.separate {
+  border: 1px solid #292F36;
+  margin-top: 8px; }
+
+.separate2 {
+  border: 1px solid #292F36;
+  margin-top: 5px; }
+
 #main-page .name {
   font-family: "Sniglet";
   font-weight: 100;
@@ -42,12 +51,6 @@ a {
   color: #292F36;
   display: flex;
   justify-content: center; }
-#main-page .separate {
-  border: 1px solid black;
-  margin-top: 8px; }
-#main-page .separate2 {
-  border: 1px solid black;
-  margin-top: 5px; }
 #main-page .skull {
   width: 165px;
   display: flex; }
@@ -76,7 +79,10 @@ a {
   display: flex;
   justify-content: center; }
 
-#illustration-page .img {
+#design-page .img-design {
+  max-width: 500px; }
+
+#illustration-page .img-illustration {
   max-height: 200px; }
 #illustration-page .img-container {
   width: 100%;
