@@ -1,5 +1,5 @@
 body {
-  padding: 10px;
+  padding: 25px;
   background: $white;
 }
 
@@ -10,6 +10,7 @@ body {
 .header {
   font-family: "Sniglet";
   font-size: 70px;
+  text-align: center;
 }
 
 p {
@@ -38,4 +39,9 @@ a {
   // border: 1px solid black;
   height: 800px;;
   width: 96.5vw;
+}
+
+.img-resize {
+  width: 300px;
+  margin: 50px;
 }
