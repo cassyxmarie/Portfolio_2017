@@ -1,15 +1,11 @@
-// $("#pagePort").load("illustration.html", function(){
-//   $.getScript("js/scripts.js", function() {
-//       if (currentPage.init) {
-//           currentPage.init();
-//       }
-//   });
-// });
-$(document).ready(function(){
 
-var jqueryOverlay = $('<div id="overlay"></div>');
+
+
+var jqueryOverlay = $('<div id="overlay" style="display: none;"></div>');
+$(document).ready(function(){
 var jqueryImage = $("<img>");
 var jqueryCaption = $("<p></p>");
+var jqueryStyle = $('<style>#overlay {background:rgba(41, 47, 54, 0.8); height:100%; width:100%; text-align:center;}</style>')
 
 jqueryOverlay.append(jqueryImage);
 jqueryOverlay.append(jqueryCaption);
@@ -18,6 +14,7 @@ $("body").append(jqueryOverlay);
 
 $("#imageGallery a").click(function(event) {
  event.preventDefault();
+ $("body").append(jqueryStyle);
  var imageLocation = $(this).attr("href");
  jqueryImage.attr("src", imageLocation);
 
