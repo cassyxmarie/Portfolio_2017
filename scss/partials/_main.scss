@@ -1,32 +1,115 @@
 #main-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  // border: solid blue 1px;
 
   .name {
-    font-family: "Sniglet";
-    font-weight:100;
-    font-size: 75px;
     color: $grey;
-    display: flex;
-    justify-content: center;
-  }
+   }
 
-
-  .skull {
-    width: 165px;
-    display: flex;
-  }
-
-  .first{
-    display: flex;
+  .first {
+    font-family: "Sniglet";
+    font-weight: 100;
+    font-size: 500%;
   }
 
   .last {
-    display: flex;
+    font-family: "Sniglet";
+    font-weight: 100;
+    font-size: 500%;
   }
 
   .title {
     display: flex;
     justify-content: center;
-    margin-top: 7%;
+    align-items: center;
+    width: 850px;
+    // border: solid red 1px;
+  }
+
+  .nbsp {
+    min-height: 300px;
+    width: 200px;
+    // border: 2px solid gray;
+    position: relative;
+
+  }
+
+  .bow {
+    position: absolute;
+  }
+
+  #head {
+  /*   border: 2px solid red; */
+    z-index: -1;
+    top: 0px;
+  }
+
+  .loop {
+    top: 165px;
+  }
+
+  .ribbon {
+    top: 210px;
+  }
+
+  #loopL {
+  /*   border: 2px solid orange; */
+  }
+
+  #loopR {
+  /*   border: 2px solid green; */
+    left: 112px;
+  }
+
+  #ribbonR {
+  /*   border: 2px solid blue; */
+    left: 105px;
+    animation-name: ribbonR-movement;
+    animation-duration: 4s;
+  }
+
+  @keyframes ribbonR-movement {
+    25% {
+      top: 212px;
+      left: 100px;
+      transform: rotate(7deg);
+    }
+
+    50% {
+      top: 210px;
+      left: 105px;
+      transform: rotate(0deg);
+    }
+
+    75% {
+      top: 212px;
+      left: 100px;
+      transform: rotate(7deg);
+    }
+  }
+
+  #ribbonL {
+  /*   border: 2px solid pink; */
+    left: 55px;
+    animation-name: ribbonL-movement;
+    animation-duration: 4s;
+  }
+
+  @keyframes ribbonL-movement {
+    25% {
+      left: 50px;
+      transform: rotate(7deg);
+    }
+    50% {
+      left: 55px;
+      transform: rotate(0deg);
+    }
+    75% {
+      left: 50px;
+      transform: rotate(7deg);
+    }
   }
 
   .annoyingdiv {
@@ -36,7 +119,7 @@
 
   .bio-box {
     display: flex;
-    width: 650px;
+    max-width: 650px;
     // border: 1px solid $grey;
   }
 

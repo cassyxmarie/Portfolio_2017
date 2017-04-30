@@ -6,11 +6,6 @@ body {
 .bold {
   font-weight: bolder; }
 
-.header {
-  font-family: "Sniglet";
-  font-size: 30px;
-  text-align: center; }
-
 p {
   font-family: "Raleway";
   color: #292F36; }
@@ -83,33 +78,86 @@ li {
 #overlay p {
   color: white; }
 
-#main-page .name {
-  font-family: "Sniglet";
-  font-weight: 100;
-  font-size: 75px;
-  color: #292F36;
+#main-page {
+  width: 100%;
   display: flex;
   justify-content: center; }
-#main-page .skull {
-  width: 165px;
-  display: flex; }
-#main-page .first {
-  display: flex; }
-#main-page .last {
-  display: flex; }
-#main-page .title {
-  display: flex;
-  justify-content: center;
-  margin-top: 7%; }
-#main-page .annoyingdiv {
-  display: flex;
-  justify-content: center; }
-#main-page .bio-box {
-  display: flex;
-  width: 650px; }
-#main-page .contact {
-  display: flex;
-  justify-content: center; }
+  #main-page .name {
+    color: #292F36; }
+  #main-page .first {
+    font-family: "Sniglet";
+    font-weight: 100;
+    font-size: 500%; }
+  #main-page .last {
+    font-family: "Sniglet";
+    font-weight: 100;
+    font-size: 500%; }
+  #main-page .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 850px; }
+  #main-page .nbsp {
+    min-height: 300px;
+    width: 200px;
+    position: relative; }
+  #main-page .bow {
+    position: absolute; }
+  #main-page #head {
+    /*   border: 2px solid red; */
+    z-index: -1;
+    top: 0px; }
+  #main-page .loop {
+    top: 165px; }
+  #main-page .ribbon {
+    top: 210px; }
+  #main-page #loopL {
+    /*   border: 2px solid orange; */ }
+  #main-page #loopR {
+    /*   border: 2px solid green; */
+    left: 112px; }
+  #main-page #ribbonR {
+    /*   border: 2px solid blue; */
+    left: 105px;
+    animation-name: ribbonR-movement;
+    animation-duration: 4s; }
+@keyframes ribbonR-movement {
+  25% {
+    top: 212px;
+    left: 100px;
+    transform: rotate(7deg); }
+  50% {
+    top: 210px;
+    left: 105px;
+    transform: rotate(0deg); }
+  75% {
+    top: 212px;
+    left: 100px;
+    transform: rotate(7deg); } }
+  #main-page #ribbonL {
+    /*   border: 2px solid pink; */
+    left: 55px;
+    animation-name: ribbonL-movement;
+    animation-duration: 4s; }
+@keyframes ribbonL-movement {
+  25% {
+    left: 50px;
+    transform: rotate(7deg); }
+  50% {
+    left: 55px;
+    transform: rotate(0deg); }
+  75% {
+    left: 50px;
+    transform: rotate(7deg); } }
+  #main-page .annoyingdiv {
+    display: flex;
+    justify-content: center; }
+  #main-page .bio-box {
+    display: flex;
+    max-width: 650px; }
+  #main-page .contact {
+    display: flex;
+    justify-content: center; }
 
 #design-page .img-design {
   max-width: 300px; }
