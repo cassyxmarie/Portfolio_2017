@@ -9,6 +9,9 @@ body {
 p {
   font-family: "Raleway";
   color: #292F36; }
+  @media only screen and (max-width: 800px) {
+    p {
+      font-size: 14px; } }
 
 nav {
   display: flex;
@@ -45,8 +48,7 @@ a {
     text-decoration: underline; }
 
 .main {
-  height: 800px;
-  width: 96.5vw; }
+  height: 800px; }
 
 .img-resize {
   width: 300px;
@@ -87,74 +89,168 @@ li {
   #main-page .first {
     font-family: "Sniglet";
     font-weight: 100;
-    font-size: 500%; }
+    font-size: 450%; }
+    @media only screen and (max-width: 800px) {
+      #main-page .first {
+        font-size: 350%; } }
   #main-page .last {
     font-family: "Sniglet";
     font-weight: 100;
-    font-size: 500%; }
+    font-size: 450%; }
+    @media only screen and (max-width: 800px) {
+      #main-page .last {
+        font-size: 350%; } }
   #main-page .title {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 850px; }
-  #main-page .nbsp {
-    min-height: 300px;
-    width: 200px;
-    position: relative; }
-  #main-page .bow {
-    position: absolute; }
-  #main-page #head {
-    /*   border: 2px solid red; */
-    z-index: -1;
-    top: 0px; }
-  #main-page .loop {
-    top: 165px; }
-  #main-page .ribbon {
-    top: 210px; }
-  #main-page #loopL {
-    /*   border: 2px solid orange; */ }
-  #main-page #loopR {
-    /*   border: 2px solid green; */
-    left: 112px; }
-  #main-page #ribbonR {
-    /*   border: 2px solid blue; */
-    left: 105px;
-    animation-name: ribbonR-movement;
-    animation-duration: 4s; }
-@keyframes ribbonR-movement {
-  25% {
-    top: 212px;
-    left: 100px;
-    transform: rotate(7deg); }
-  50% {
-    top: 210px;
-    left: 105px;
-    transform: rotate(0deg); }
-  75% {
-    top: 212px;
-    left: 100px;
-    transform: rotate(7deg); } }
-  #main-page #ribbonL {
-    /*   border: 2px solid pink; */
-    left: 55px;
-    animation-name: ribbonL-movement;
-    animation-duration: 4s; }
-@keyframes ribbonL-movement {
-  25% {
-    left: 50px;
-    transform: rotate(7deg); }
-  50% {
-    left: 55px;
-    transform: rotate(0deg); }
-  75% {
-    left: 50px;
-    transform: rotate(7deg); } }
+    width: 100%; }
+  @media only screen and (min-width: 800px) {
+    #main-page .nbsp {
+      min-height: 300px;
+      width: 200px;
+      position: relative; }
+    #main-page .bow {
+      position: absolute; }
+    #main-page #head {
+      /*   border: 2px solid red; */
+      z-index: -1;
+      top: 0px; }
+    #main-page .loop {
+      top: 165px; }
+    #main-page .ribbon {
+      top: 210px; }
+    #main-page #loopL {
+      /*   border: 2px solid orange; */ }
+    #main-page #loopR {
+      /*   border: 2px solid green; */
+      left: 112px; }
+    #main-page #ribbonR {
+      /*   border: 2px solid blue; */
+      left: 105px;
+      animation-name: ribbonR-movement;
+      animation-timing-function: ease-in-out;
+      animation-duration: 3s; }
+    @keyframes ribbonR-movement {
+      25% {
+        top: 212px;
+        left: 100px;
+        transform: rotate(7deg); }
+      45% {
+        top: 210px;
+        left: 105px;
+        transform: rotate(0deg); }
+      85% {
+        top: 211px;
+        left: 103px;
+        transform: rotate(3deg); }
+      100% {
+        top: 210px;
+        left: 105px;
+        transform: rotate(0deg); } }
+    #main-page #ribbonL {
+      /*   border: 2px solid pink; */
+      left: 53px;
+      animation-name: ribbonL-movement;
+      animation-timing-function: ease-in-out;
+      animation-duration: 3s; }
+    @keyframes ribbonL-movement {
+      25% {
+        top: 208px;
+        left: 48px;
+        transform: rotate(7deg); }
+      45% {
+        top: 210px;
+        left: 53px;
+        transform: rotate(0deg); }
+      85% {
+        top: 209px;
+        left: 50px;
+        transform: rotate(3deg); }
+      100% {
+        top: 210px;
+        left: 53px;
+        transform: rotate(0deg); } } }
+  @media only screen and (max-width: 799px) {
+    #main-page .nbsp {
+      height: 290px;
+      width: 149px;
+      position: relative; }
+    #main-page .bow {
+      position: absolute; }
+    #main-page #head {
+      /*   border: 2px solid red; */
+      z-index: -1;
+      left: -25px;
+      top: 0px;
+      transform: scale(0.75); }
+    #main-page .loop {
+      transform: scale(0.75);
+      top: 142px; }
+    #main-page .ribbon {
+      transform: scale(0.75);
+      top: 169px; }
+    #main-page #loopL {
+      left: -11px;
+      /*   border: 2px solid orange; */ }
+    #main-page #loopR {
+      /*   border: 2px solid green; */
+      left: 73px; }
+    #main-page #ribbonR {
+      /*   border: 2px solid blue; */
+      left: 75px;
+      animation-name: ribbonR-movement;
+      animation-timing-function: ease-in-out;
+      animation-duration: 3s; }
+    @keyframes ribbonR-movement {
+      25% {
+        left: 71px;
+        transform: scale(0.75) rotate(6deg); }
+      45% {
+        left: 75px;
+        transform: scale(0.75) rotate(0deg); }
+      85% {
+        left: 72px;
+        transform: scale(0.75) rotate(3deg); }
+      100% {
+        left: 75px;
+        transform: scale(0.75) rotate(0deg); } }
+    #main-page #ribbonL {
+      /*   border: 2px solid pink; */
+      left: 33px;
+      animation-name: ribbonL-movement;
+      animation-timing-function: ease-in-out;
+      animation-duration: 3s; }
+    @keyframes ribbonL-movement {
+      25% {
+        left: 29px;
+        transform: scale(0.75) rotate(6deg); }
+      45% {
+        left: 33px;
+        transform: scale(0.75) rotate(0deg); }
+      85% {
+        left: 30px;
+        transform: scale(0.75) rotate(3deg); }
+      100% {
+        left: 33px;
+        transform: scale(0.75) rotate(0deg); } } }
   #main-page .annoyingdiv {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    width: 100%; }
   #main-page .bio-box {
+    margin-top: 20px;
     display: flex;
-    max-width: 650px; }
+    width: 100%;
+    max-width: 665px;
+    text-align: justify; }
+    @media only screen and (max-width: 800px) {
+      #main-page .bio-box {
+        max-width: 550px;
+        margin: 0px; } }
+    @media only screen and (max-width: 800px) {
+      #main-page .bio-box p {
+        margin: 0px; } }
   #main-page .contact {
     display: flex;
     justify-content: center; }
