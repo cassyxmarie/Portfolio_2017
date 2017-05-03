@@ -1,8 +1,52 @@
-@import url(https://fonts.googleapis.com/css?family=Sniglet:800|Nixie+One|Raleway:500);
+@import url(https://fonts.googleapis.com/css?family=Sniglet:800|Raleway:500|Wire+One);
 body {
   padding: 25px;
   background: #EEF0F2; }
 
+@media only screen and (max-width: 579px) {
+  .dropbtn {
+    background: #52D1DC;
+    border: 0.5px solid #292F36;
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer; }
+
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41; }
+
+  .dropdown {
+    position: relative;
+    display: inline-block; }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1; }
+
+  .show {
+    display: block; } }
+button {
+  font-size: 30px;
+  color: #EEF0F2;
+  padding: 0px;
+  padding-top: -30px; }
+
+@media only screen and (min-width: 579px) {
+  .dropbtn {
+    display: none; } }
 .bold {
   font-weight: bolder; }
 
@@ -16,23 +60,12 @@ p {
 nav {
   display: flex;
   width: 100%;
-  height: 35px;
-  font-family: "Raleway"; }
-
-.leftNav {
-  width: 300px;
-  font-size: 14px;
-  display: flex;
-  justify-content: flex-start;
-  justify-content: space-between;
-  position: absolute;
-  left: 5%; }
+  height: 30px; }
 
 .rightNav {
-  width: 250px;
+  width: 70%;
   display: flex;
   justify-content: space-between;
-  justify-content: flex-end;
   position: absolute;
   right: 5%; }
   .rightNav .icon {
@@ -41,12 +74,29 @@ nav {
     margin-right: 10px;
     height: 30px; }
 
-a {
-  color: #292F36;
-  text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
+@media only screen and (min-width: 580px) {
+  nav {
+    height: 35px;
+    font-family: "Raleway"; }
 
+  .rightNav {
+    width: 250px;
+    justify-content: flex-end; }
+
+  .leftNav {
+    width: 300px;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    position: absolute;
+    left: 5%; }
+
+  a {
+    color: #292F36;
+    text-decoration: none; }
+    a:hover {
+      text-decoration: underline; } }
 .main {
   height: 800px; }
 
@@ -90,16 +140,22 @@ li {
     font-family: "Sniglet";
     font-weight: 100;
     font-size: 450%; }
-    @media only screen and (max-width: 800px) {
+    @media only screen and (min-width: 580px) and (max-width: 799px) {
       #main-page .first {
         font-size: 350%; } }
+    @media only screen and (max-width: 579px) {
+      #main-page .first {
+        font-size: 225%; } }
   #main-page .last {
     font-family: "Sniglet";
     font-weight: 100;
     font-size: 450%; }
-    @media only screen and (max-width: 800px) {
+    @media only screen and (min-width: 580px) and (max-width: 799px) {
       #main-page .last {
         font-size: 350%; } }
+    @media only screen and (max-width: 579px) {
+      #main-page .last {
+        font-size: 225%; } }
   #main-page .title {
     display: flex;
     justify-content: center;
@@ -171,7 +227,7 @@ li {
         top: 210px;
         left: 53px;
         transform: rotate(0deg); } } }
-  @media only screen and (max-width: 799px) {
+  @media only screen and (min-width: 580px) and (max-width: 799px) {
     #main-page .nbsp {
       height: 290px;
       width: 149px;
@@ -234,6 +290,69 @@ li {
       100% {
         left: 33px;
         transform: scale(0.75) rotate(0deg); } } }
+  @media only screen and (max-width: 579px) {
+    #main-page .nbsp {
+      height: 290px;
+      width: 139px;
+      position: relative; }
+    #main-page .bow {
+      position: absolute; }
+    #main-page #head {
+      /*   border: 2px solid red; */
+      z-index: -1;
+      left: -28px;
+      top: 0px;
+      transform: scale(0.65); }
+    #main-page .loop {
+      transform: scale(0.65);
+      top: 132px; }
+    #main-page .ribbon {
+      transform: scale(0.65);
+      top: 152px; }
+    #main-page #loopL {
+      left: -7px;
+      /*   border: 2px solid orange; */ }
+    #main-page #loopR {
+      /*   border: 2px solid green; */
+      left: 64px; }
+    #main-page #ribbonR {
+      /*   border: 2px solid blue; */
+      left: 70px;
+      animation-name: ribbonR-movement;
+      animation-timing-function: ease-in-out;
+      animation-duration: 3s; }
+    @keyframes ribbonR-movement {
+      25% {
+        left: 71px;
+        transform: scale(0.65) rotate(6deg); }
+      45% {
+        left: 75px;
+        transform: scale(0.65) rotate(0deg); }
+      85% {
+        left: 72px;
+        transform: scale(0.65) rotate(3deg); }
+      100% {
+        left: 75px;
+        transform: scale(0.65) rotate(0deg); } }
+    #main-page #ribbonL {
+      /*   border: 2px solid pink; */
+      left: 32px;
+      animation-name: ribbonL-movement;
+      animation-timing-function: ease-in-out;
+      animation-duration: 3s; }
+    @keyframes ribbonL-movement {
+      25% {
+        left: 29px;
+        transform: scale(0.65) rotate(6deg); }
+      45% {
+        left: 33px;
+        transform: scale(0.65) rotate(0deg); }
+      85% {
+        left: 30px;
+        transform: scale(0.65) rotate(3deg); }
+      100% {
+        left: 33px;
+        transform: scale(0.65) rotate(0deg); } } }
   #main-page .annoyingdiv {
     display: flex;
     justify-content: center;
@@ -244,11 +363,11 @@ li {
     width: 100%;
     max-width: 665px;
     text-align: justify; }
-    @media only screen and (max-width: 800px) {
+    @media only screen and (min-width: 580px) and (max-width: 799px) {
       #main-page .bio-box {
         max-width: 550px;
         margin: 0px; } }
-    @media only screen and (max-width: 800px) {
+    @media only screen and (min-width: 580px) and (max-width: 799px) {
       #main-page .bio-box p {
         margin: 0px; } }
   #main-page .contact {

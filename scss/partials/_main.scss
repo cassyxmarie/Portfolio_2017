@@ -12,8 +12,11 @@
     font-family: "Sniglet";
     font-weight: 100;
     font-size: 450%;
-    @media only screen and (max-width: 800px) {
+    @media only screen and (min-width: 580px) and (max-width: 799px) {
       font-size: 350%;
+    }
+    @media only screen and (max-width: 579px) {
+      font-size: 225%;
     }
   }
 
@@ -21,8 +24,11 @@
     font-family: "Sniglet";
     font-weight: 100;
     font-size: 450%;
-    @media only screen and (max-width: 800px) {
+    @media only screen and (min-width: 580px) and (max-width: 799px) {
       font-size: 350%;
+    }
+    @media only screen and (max-width: 579px) {
+      font-size: 225%;
     }
   }
   .title {
@@ -134,7 +140,7 @@
   }
 }
 
-@media only screen and (max-width: 799px){
+@media only screen and (min-width: 580px) and (max-width: 799px) {
 
 .nbsp {
   height: 290px;
@@ -232,6 +238,104 @@
 }
 }
 
+@media only screen and (max-width: 579px) {
+
+.nbsp {
+  height: 290px;
+  width: 139px;
+  position: relative;
+}
+
+.bow {
+  position: absolute;
+}
+
+#head {
+/*   border: 2px solid red; */
+  z-index: -1;
+  left: -28px;
+  top: 0px;
+  transform: scale(0.65);
+}
+
+.loop {
+  transform: scale(0.65);
+  top: 132px;
+}
+
+.ribbon {
+  transform: scale(0.65);
+  top: 152px;
+}
+
+#loopL {
+  left: -7px;
+/*   border: 2px solid orange; */
+}
+
+#loopR {
+/*   border: 2px solid green; */
+  left: 64px;
+}
+
+#ribbonR {
+/*   border: 2px solid blue; */
+  left: 70px;
+  animation-name: ribbonR-movement;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+}
+
+@keyframes ribbonR-movement {
+  25% {
+    left: 71px;
+    transform: scale(0.65) rotate(6deg);
+  }
+
+  45% {
+    left: 75px;
+    transform: scale(0.65) rotate(0deg);
+  }
+
+  85% {
+    left: 72px;
+    transform: scale(0.65) rotate(3deg);
+  }
+  100% {
+    left: 75px;
+    transform: scale(0.65) rotate(0deg);
+  }
+}
+
+#ribbonL {
+/*   border: 2px solid pink; */
+  left: 32px;
+  animation-name: ribbonL-movement;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+}
+
+@keyframes ribbonL-movement {
+  25% {
+    left: 29px;
+    transform: scale(0.65) rotate(6deg);
+  }
+  45% {
+    left: 33px;
+    transform: scale(0.65) rotate(0deg);
+  }
+  85% {
+    left: 30px;
+    transform: scale(0.65) rotate(3deg);
+  }
+  100% {
+    left: 33px;
+    transform: scale(0.65) rotate(0deg);
+  }
+}
+}
+
+
   .annoyingdiv {
     display: flex;
     justify-content: center;
@@ -244,12 +348,12 @@
     width: 100%;
     max-width: 665px;
     text-align: justify;
-    @media only screen and (max-width: 800px) {
+    @media only screen and (min-width: 580px) and (max-width: 799px) {
       max-width: 550px;
       margin: 0px;
     }
     p {
-      @media only screen and (max-width: 800px) {
+      @media only screen and (min-width: 580px) and (max-width: 799px) {
         margin: 0px;
       }
     }
