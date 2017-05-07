@@ -378,8 +378,6 @@ li {
 #code-page .img-resize {
   margin-top: 5%;
   width: 95%; }
-  #code-page .img-resize:hover {
-    cursor: pointer; }
 #code-page a {
   color: #52D1DC; }
 @media screen and (min-width: 490px) {
@@ -408,8 +406,6 @@ li {
 #design-page .img-resize {
   margin-top: 5%;
   width: 95%; }
-  #design-page .img-resize:hover {
-    cursor: pointer; }
 #design-page a {
   color: #52D1DC; }
 @media screen and (min-width: 490px) {
@@ -435,20 +431,38 @@ li {
   #design-page .text-box p {
     font-size: 14px; } }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1150px) {
   #illustration-page .img-illustration {
     max-height: 200px; } }
-@media screen and (min-width: 580px) and (max-width: 799px) {
+@media screen and (min-width: 950px) and (max-width: 1149px) {
   #illustration-page .img-illustration {
     max-height: 165px; } }
-@media screen and (max-width: 579px) {
+@media screen and (min-width: 730px) and (max-width: 949px) {
   #illustration-page .img-illustration {
     max-height: 125px;
     display: flex; } }
 #illustration-page .img-container {
-  width: 70%;
+  width: 100%;
   margin-bottom: 5%;
   display: flex;
   justify-content: space-between; }
+@media screen and (max-width: 549px) {
+  #illustration-page img {
+    max-height: 250px;
+    max-width: 95%;
+    margin-bottom: 10%; }
+  #illustration-page .img-container {
+    display: block;
+    text-align: center; } }
+@media screen and (min-width: 550px) and (max-width: 729px) {
+  #illustration-page img {
+    max-height: 325px;
+    max-width: 95%;
+    margin-bottom: 10%; }
+  #illustration-page .img-container {
+    display: block;
+    text-align: center; } }
+#illustration-page ul {
+  padding: 0px; }
 
 /*# sourceMappingURL=main.css.map */
