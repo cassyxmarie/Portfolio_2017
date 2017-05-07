@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Sniglet:800|Raleway:500|Wire+One);
+@import url(https://fonts.googleapis.com/css?family=Sniglet:800|Raleway:500,600|Wire+One);
 body {
   padding: 25px;
   background: #EEF0F2; }
@@ -104,10 +104,6 @@ nav {
       text-decoration: underline; } }
 .main {
   height: 800px; }
-
-.img-resize {
-  width: 300px;
-  margin: 50px; }
 
 .separate {
   border: 1px solid #292F36;
@@ -379,13 +375,52 @@ li {
     display: flex;
     justify-content: center; }
 
-#design-page .img-design {
-  max-width: 300px; }
+#code-page .img-resize {
+  margin-top: 5%; }
+  #code-page .img-resize:hover {
+    cursor: pointer; }
+#code-page a {
+  color: #52D1DC; }
+@media screen and (min-width: 490px) {
+  #code-page .code-img-container {
+    display: flex; }
+    #code-page .code-img-container .img-container {
+      display: flex;
+      justify-content: flex-start; }
+    #code-page .code-img-container .text-box {
+      width: 70%; }
+    #code-page .code-img-container .bold {
+      font-weight: 600; } }
+#code-page .img-resize {
+  width: 95%; }
+@media screen and (min-width: 640px) {
+  #code-page .img-box {
+    width: 70%; }
+  #code-page .text-box {
+    padding-top: 20px; } }
+@media screen and (max-width: 639px) and (min-width: 490px) {
+  #code-page .img-box {
+    width: 90%; }
+  #code-page .text-box {
+    padding-top: 0px; }
+  #code-page .text-box p {
+    font-size: 14px; } }
 
-#illustration-page .img-illustration {
-  max-height: 200px; }
+#design-page .img-design {
+  width: 70%; }
+
+@media screen and (min-width: 800px) {
+  #illustration-page .img-illustration {
+    max-height: 200px; } }
+@media screen and (min-width: 580px) and (max-width: 799px) {
+  #illustration-page .img-illustration {
+    max-height: 165px; } }
+@media screen and (max-width: 579px) {
+  #illustration-page .img-illustration {
+    max-height: 125px;
+    display: flex; } }
 #illustration-page .img-container {
-  width: 100%;
+  width: 70%;
   margin-bottom: 5%;
   display: flex;
   justify-content: space-between; }

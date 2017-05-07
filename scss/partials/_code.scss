@@ -1,5 +1,55 @@
 #code-page {
+  .img-resize {
+    margin-top: 5%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  a {
+    color: $blue;
+  }
+  @media screen and (min-width: 490px) {
+  .code-img-container {
+    display: flex;
+    .img-container {
+      // width: 50%;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .text-box {
+      width: 70%;
+    }
+    .bold {
+      font-weight: 600;
+    }
+  }
+}
+
+  .img-resize {
+    width: 95%;
+  }
 
 
+  @media screen and (min-width: 640px){
+  .img-box {
+    width: 70%;
+  }
+  .text-box {
+    padding-top: 20px;
+  }
+}
 
+  @media screen and (max-width: 639px) and (min-width: 490px){
+    .img-box {
+      width: 90%;
+    }
+    .text-box {
+      padding-top: 0px;
+    }
+    .text-box p {
+      font-size: 14px;
+    }
+  }
 }

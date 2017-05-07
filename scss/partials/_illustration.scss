@@ -1,11 +1,20 @@
 #illustration-page {
 
   .img-illustration {
+    @media screen and (min-width: 800px){
     max-height: 200px;
   }
+  @media screen and (min-width: 580px) and (max-width: 799px){
+    max-height: 165px;
+  }
+  @media screen and (max-width: 579px){
+    max-height: 125px;
+    display: flex;
+  }
+   }
 
   .img-container {
-    width: 100%;
+    width: 70%;
     margin-bottom: 5%;
     display: flex;
     justify-content: space-between;
