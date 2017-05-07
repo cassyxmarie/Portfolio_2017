@@ -1,6 +1,7 @@
 #code-page {
   .img-resize {
     margin-top: 5%;
+    width: 95%;
     &:hover {
       cursor: pointer;
     }
@@ -9,37 +10,31 @@
   a {
     color: $blue;
   }
+
   @media screen and (min-width: 490px) {
-  .code-img-container {
-    display: flex;
-    .img-container {
-      // width: 50%;
+    .code-img-container {
       display: flex;
-      justify-content: flex-start;
-    }
-
-    .text-box {
-      width: 70%;
-    }
-    .bold {
-      font-weight: 600;
+      .img-container {
+        display: flex;
+        justify-content: flex-start;
+      }
+      .text-box {
+        width: 70%;
+      }
+      .bold {
+        font-weight: 600;
+      }
     }
   }
-}
-
-  .img-resize {
-    width: 95%;
-  }
-
 
   @media screen and (min-width: 640px){
-  .img-box {
-    width: 70%;
+    .img-box {
+      width: 70%;
+    }
+    .text-box {
+      padding-top: 20px;
+    }
   }
-  .text-box {
-    padding-top: 20px;
-  }
-}
 
   @media screen and (max-width: 639px) and (min-width: 490px){
     .img-box {
