@@ -3,7 +3,18 @@
   display: flex;
   justify-content: center;
   // border: solid blue 1px;
-
+  .first-line {
+    display: flex;
+    justify-content: center;
+  }
+  .second-line {
+    display: flex;
+    justify-content: center;
+  }
+  .third-line {
+    display: flex;
+    justify-content: center;
+  }
   .name {
     color: $grey;
    }

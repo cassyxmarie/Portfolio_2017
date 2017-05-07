@@ -3,6 +3,9 @@ body {
   padding: 25px;
   background: #EEF0F2; }
 
+.blue {
+  color: #52D1DC; }
+
 @media only screen and (max-width: 579px) {
   .slashes {
     display: none; }
@@ -135,6 +138,15 @@ li {
   width: 100%;
   display: flex;
   justify-content: center; }
+  #main-page .first-line {
+    display: flex;
+    justify-content: center; }
+  #main-page .second-line {
+    display: flex;
+    justify-content: center; }
+  #main-page .third-line {
+    display: flex;
+    justify-content: center; }
   #main-page .name {
     color: #292F36; }
   #main-page .first {
