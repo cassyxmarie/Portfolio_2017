@@ -26,8 +26,11 @@
     @media only screen and (min-width: 580px) and (max-width: 799px) {
       font-size: 350%;
     }
-    @media only screen and (max-width: 579px) {
-      font-size: 225%;
+    @media only screen and (min-width: 450px) and (max-width: 579px) {
+      font-size: 260%;
+    }
+    @media only screen and (max-width: 449px) {
+      font-size: 200%;
     }
   }
 
@@ -38,8 +41,11 @@
     @media only screen and (min-width: 580px) and (max-width: 799px) {
       font-size: 350%;
     }
-    @media only screen and (max-width: 579px) {
-      font-size: 225%;
+    @media only screen and (min-width: 450px) and (max-width: 579px) {
+      font-size: 260%;
+    }
+    @media only screen and (max-width: 449px) {
+      font-size: 200%;
     }
   }
   .title {
@@ -299,21 +305,21 @@
 
 @keyframes ribbonR-movement {
   25% {
-    left: 71px;
+    left: 68px;
     transform: scale(0.65) rotate(6deg);
   }
 
   45% {
-    left: 75px;
+    left: 70px;
     transform: scale(0.65) rotate(0deg);
   }
 
   85% {
-    left: 72px;
+    left: 69px;
     transform: scale(0.65) rotate(3deg);
   }
   100% {
-    left: 75px;
+    left: 70px;
     transform: scale(0.65) rotate(0deg);
   }
 }
@@ -356,11 +362,17 @@
   .bio-box {
     margin-top: 20px;
     display: flex;
-    width: 100%;
+    width: 90%;
     max-width: 665px;
     text-align: justify;
     @media only screen and (min-width: 580px) and (max-width: 799px) {
-      max-width: 550px;
+      width: 90%;
+      max-width: 600px;
+      margin: 0px;
+    }
+    @media only screen and (max-width: 579px) {
+      width: 90%;
+      min-width: 350px;
       margin: 0px;
     }
     p {
